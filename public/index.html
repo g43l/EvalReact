@@ -2,42 +2,203 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="stylesheet" href="index.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>QCM React</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <h1>QCM d'évaluation sur REACT</h1>
+    <div class="form">
+      <form action="TODO: mettre l'adresse de Julien" method="post">
+        <div>
+          <label for="name">Votre nom: </label>
+          <input type="text" id="name" name="user-name">
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <div>
+          <label for="firstname">Votre prénom: </label>
+          <input type="text" id="firstname" name="user-firstname">
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <div>
+          <p>A quoi sert React? </p>
+          <div>
+              <input type="radio" id="q0_a1" name="q0" value="q0_a1">
+              <label for="q0_a1">A administrer des bases de données  </label>
+          </div>
+          <div>
+            <input type="radio" id="q0_a2" name="q0" value="q0_a2">
+            <label for="q0_a2"></label>A créer des interfaces utilisateurs en Javascript  <br>
+          </div>
+          <div>
+            <input type="radio" id="q0_a3" name="q0" value="q0_a3">
+            <label for="q0_a3">A envoyer des requêtes réseau avec Javascript</label>
+          </div>
+          <div>
+            <input type="radio" id="q0_a4" name="q0" value="q0_a4">
+            <label for="q0_a4">A rien</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Sur quel concept repose React?</p>
+          <div>
+            <input type="radio" id="q1_a1" name="q1" value="q1_a1">
+            <label for="q1_a1">Les modules </label>
+          </div>
+          <div>
+            <input type="radio" id="q1_a2" name="q1" value="q1_a2">
+            <label for="q1_a2">Les services</label>
+          </div>
+          <div>
+            <input type="radio" id="q1_a3" name="q1" value="q1_a3">
+            <label for="q1_a3">Les composants</label>
+          </div>
+          <div>
+            <input type="radio" id="q1_a4" name="q1" value="q1_a4">
+            <label for="q1_a4">Les microservices</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Qui développe React?</p>
+          <div>
+            <input type="radio" id="q2_a1" name="q1" value="q2_a1">
+            <label for="q2_a1">Google</label>
+          </div>
+          <div>
+            <input type="radio" id="q2_a2" name="q1" value="q2_a2">
+            <label for="q2_a2">Twitter</label>
+          </div>
+          <div>
+            <input type="radio" id="q2_a3" name="q1" value="q2_a3">
+            <label for="q2_a3">Apple</label>
+          </div>
+          <div>
+            <input type="radio" id="q2_a4" name="q1" value="q2_a4">
+            <label for="q2_a4">Facebook</label>
+          </div>
+        </div>
+
+        <div>
+          <p>A quoi servent les props?</p>
+          <div>
+            <input type="radio" id="q3_a1" name="q1" value="q3_a1">
+            <label for="q3_a1">A passer des propriétés aux composant</label>
+          </div>
+          <div>
+            <input type="radio" id="q3_a2" name="q1" value="q3_a2">
+            <label for="q3_a2">A créer un état pour le composant</label>
+          </div>
+          <div>
+            <input type="radio" id="q3_a3" name="q1" value="q3_a3">
+            <label for="q3_a3">A afficher le composant</label>
+          </div>
+          <div>
+            <input type="radio" id="q3_a4" name="q1" value="q3_a4">
+            <label for="q3_a4">A casser les pieds</label>
+          </div>
+        </div>
+
+        <div>
+          <p>A quoi sert JSX?</p>
+          <div>
+            <input type="radio" id="q4_a1" name="q1" value="q4_a1">
+            <label for="q4_a1">A faire des appels à la base de données</label>
+          </div>
+          <div>
+            <input type="radio" id="q4_a2" name="q1" value="q4_a2">
+            <label for="q4_a2">A rajouter des types à Javascript</label>
+          </div>
+          <div>
+            <input type="radio" id="q4_a3" name="q1" value="q4_a3">
+            <label for="q4_a3">A fournir une surcouche synthaxique à Javascript</label>
+          </div>
+          <div>
+            <input type="radio" id="q4_a4" name="q1" value="q4_a4">
+            <label for="q4_a4">C'est un autre nom pour Javascript</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Qu'est-ce qu'un state?</p>
+          <div>
+            <input type="checkbox" id="q5_a1" name="q1" value="q5_a1">
+            <label for="q5_a1">Un stockage permanent</label>
+          </div>
+          <div>
+            <input type="checkbox" id="q5_a2" name="q1" value="q5_a2">
+            <label for="q5_a2">Un stockage interne du composant</label>
+          </div>
+          <div>
+            <input type="checkbox" id="q5_a3" name="q1" value="q5_a3">
+            <label for="q5_a3">Aucun des deux</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Quels sont les avantages de React?</p>
+          <div>
+            <input type="checkbox" id="q6_a1" name="q1" value="q6_a1">
+            <label for="q6_a1">Il permet de générer des balises HTML dynamiques sur le navigateur </label>
+          </div>
+          <div>
+            <input type="checkbox" id="q6_a2" name="q1" value="q6_a2">
+            <label for="q6_a2">Il permet d'améliorer les performances en réduisant les échanges réseau</label>
+          </div>
+          <div>
+            <input type="checkbox" id="q6_a3" name="q1" value="q6_a3">
+            <label for="q6_a3">Il permet de faire un site le plus léger possible</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Comment puis-je faire un affichage conditionnel ?</p>
+          <div>
+            <input type="checkbox" id="q7_a1" name="q1" value="q7_a1">
+            <label for="q7_a1">En utilisant une fonction</label>
+          </div>
+          <div>
+            <input type="checkbox" id="q7_a2" name="q1" value="q7_a2">
+            <label for="q7_a2">En passant des paramètres à la fonction 'ReactDOM.render'</label>
+          </div>
+          <div>
+            <input type="checkbox" id="q7_a3" name="q1" value="q7_a3">
+            <label for="q7_a3">En utilisant une expression ternaire</label>
+          </div>
+        </div>
+
+        <div>
+          <p>'react-dom-router' permet de faire varier l'affichage en fonction de l'URL</p>
+          <div>
+            <label class="switch">
+              <input type="checkbox" value="vrai">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <p>'create-react-app' permet de générer un projet React préconfiguré</p>
+          <div>
+            <label class="switch">
+              <input type="checkbox" value="vrai">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+          <button type="submit">Envoyer les réponses</button>
+
+      </form>
+    </div>
+
+
   </body>
 </html>

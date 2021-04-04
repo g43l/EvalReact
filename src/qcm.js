@@ -23,7 +23,7 @@ const exam = [
       options: [
 	{
 	 value: "q0_a1",
-	 text: "à administer des bases de données"
+	 text: "à administrer des bases de données"
 	},
 	{
 	 value: "q0_a2",
@@ -41,7 +41,7 @@ const exam = [
     }
   },
   {
-    question: "Sur quel comcept repose React ?",
+    question: "Sur quel concept repose React ?",
     answer: {
       name: "q1",
       type: "radio",
@@ -177,7 +177,7 @@ const exam = [
 	},
 	{
 	 name: "q6_a3",
-	 text: "il permet de faire un site le plus légé possible"
+	 text: "il permet de faire un site le plus léger possible"
 	}
       ]
     }
