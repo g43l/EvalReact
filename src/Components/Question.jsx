@@ -1,31 +1,48 @@
 import CheckBoxQuestion from './CheckBoxQuestion'
+import RadioQuestion from "./RadioQuestion";
 
-function Question ({q}) {
-    console.log(q.question)
-    console.log(q.answer)
-    console.log(q.answer.type)
+function Question ({objectQuestion}) {
+    // console.log("question question", objectQuestion.question)
+    // console.log("question answer", objectQuestion.answer)
+    // console.log("question type", objectQuestion.answer.type)
 
-    function dispQuestion (q) {
+    /*
+     2.on déclare la fonction dispQuestion, avec un paramètre questionToBeDisplayed,
+     */
+    function dispQuestion (questionToBeDisplayed) {
 
-        if (q.answer.type === "checkbox") {
+        if (questionToBeDisplayed.answer.type === "checkbox") {
             return (
-                <CheckBoxQuestion></CheckBoxQuestion>
+                <div>
+
+
+                  {/*dans la fonction dispQuestion, si la question est de type checkbox, on appelle le component*/}
+                  {/*CheckBoxQuestion avec une props objectQuestion qui contiendra ce qu'on aura passé comme argument*/}
+                  {/*à la fonction dispQuestion*/}
+
+                    <CheckBoxQuestion objectQuestion={questionToBeDisplayed}></CheckBoxQuestion>
+                </div>
             )
+        } else if (questionToBeDisplayed.answer.type === "radio") {
+            return (
+                <div>
+                    <RadioQuestion objectQuestion={questionToBeDisplayed}></RadioQuestion>
+                </div>
+            )
+
         } else {
             return (<p>Hello toi</p>)
         }
     }
 
-
+    /*
+    * 1 - dans le return du component question, on appelle la fonction dispQuestion avec objectQuestion comme argument
+    * */
     return (
         <div>
-            {dispQuestion(q)}
+            {dispQuestion(objectQuestion)}
         </div>
     )
 }
-
-
-
-
 
 export default Question

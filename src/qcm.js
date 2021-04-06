@@ -23,19 +23,19 @@ const exam = [
       options: [
 	{
 	 value: "q0_a1",
-	 text: "à administrer des bases de données"
+	 text: "A administrer des bases de données"
 	},
 	{
 	 value: "q0_a2",
-	 text: "à créer des interfaces utilisateurs en Javascript"
+	 text: "A créer des interfaces utilisateurs en Javascript"
 	},
 	{
 	 value: "q0_a3",
-	 text: "à envoyer des requêtes réseau avec Javascript"
+	 text: "A envoyer des requêtes réseau avec Javascript"
 	},
 	{
 	 value: "q0_a4",
-	 text: "à rien"
+	 text: "A rien"
 	}
       ]
     }
@@ -98,19 +98,19 @@ const exam = [
       options: [
 	{
 	 value: "q3_a1",
-	 text: "à passer des propriétés au composant"
+	 text: "A passer des propriétés au composant"
 	},
 	{
 	 value: "q3_a2",
-	 text: "à créer un état pour le composant"
+	 text: "A créer un état pour le composant"
 	},
 	{
 	 value: "q3_a3",
-	 text: "à afficher le composant"
+	 text: "A afficher le composant"
 	},
 	{
 	 value: "q3_a4",
-	 text: "à casser les pieds"
+	 text: "A casser les pieds"
 	}
       ]
     }
@@ -123,19 +123,19 @@ const exam = [
       options: [
 	{
 	 value: "q4_a1",
-	 text: "à faire des appels à la base de données"
+	 text: "A faire des appels à la base de données"
 	},
 	{
 	 value: "q4_a2",
-	 text: "à rajouter des types à Javascript"
+	 text: "A rajouter des types à Javascript"
 	},
 	{
 	 value: "q4_a3",
-	 text: "à fournir une surcouche syntaxique à Javascript pour appeler les fonctions React"
+	 text: "A fournir une surcouche syntaxique à Javascript pour appeler les fonctions React"
 	},
 	{
 	 value: "q4_a4",
-	 text: "c'est un autre nom pour Javascript"
+	 text: "C'est un autre nom pour Javascript"
 	}
       ]
     }
@@ -148,15 +148,15 @@ const exam = [
       options: [
 	{
 	 name: "q5_a1",
-	 text: "un stockage permanent"
+	 text: "Un stockage permanent"
 	},
 	{
 	 name: "q5_a2",
-	 text: "un stockage interne du composant"
+	 text: "Un stockage interne du composant"
 	},
 	{
 	 name: "q5_a3",
-	 text: "aucun des deux"
+	 text: "Aucun des deux"
 	}
       ]
     }
@@ -169,15 +169,15 @@ const exam = [
       options: [
 	{
 	 name: "q6_a1",
-	 text: "il permet de générer des baslises HTML dynamiquement sur le navigateur"
+	 text: "Il permet de générer des balises HTML dynamiquement sur le navigateur"
 	},
 	{
 	 name: "q6_a2",
-	 text: "il permet d'améliorer les performances en réduisant les échanges réseau'"
+	 text: "Il permet d'améliorer les performances en réduisant les échanges réseau'"
 	},
 	{
 	 name: "q6_a3",
-	 text: "il permet de faire un site le plus léger possible"
+	 text: "Il permet de faire un site le plus léger possible"
 	}
       ]
     }
