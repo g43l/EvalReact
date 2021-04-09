@@ -9,11 +9,10 @@ function RadioQuestion({objectQuestion}){
         <div>
             <h2>{objectQuestion.question}</h2>
             <div>
-                {objectQuestion.answer.options.map((option, index)=> (
+                {objectQuestion.answer.options.map((option, index)=> ( //on boucle sur les options de réponses à la question
                     <div key={index}>
-                        <input type={objectQuestion.answer.type} id={objectQuestion.answer.options.value} name={objectQuestion.answer.name} value={objectQuestion.answer.options.value}/>
-                        {/*<label htmlFor={objectQuestion.answer.options.value}>{objectQuestion.answer.options.text}</label>*/}
-                        <label htmlFor={option.name}>{option.text}</label>
+                        <input type={objectQuestion.answer.type} id={option.value} name={objectQuestion.answer.name} value={option.value}/>
+                        <label htmlFor={option.value}>{option.text}</label>
                     </div>
                 ))}
             </div>

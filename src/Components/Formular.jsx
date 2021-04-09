@@ -18,6 +18,7 @@ function Formular (){
                     * un nom puis tu mets ce que tu veux dedans :)
                     * */
                 ))}
+                <input className="submit" type="submit" value="Envoyer"/>
             </form>
         </div>
     )

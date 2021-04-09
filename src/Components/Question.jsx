@@ -1,5 +1,7 @@
-import CheckBoxQuestion from './CheckBoxQuestion'
+import CheckBoxQuestion from './CheckBoxQuestion';
 import RadioQuestion from "./RadioQuestion";
+import TextQuestion from "./TextQuestion";
+
 
 function Question ({objectQuestion}) {
     // console.log("question question", objectQuestion.question)
@@ -30,9 +32,19 @@ function Question ({objectQuestion}) {
                 </div>
             )
 
-        } else {
-            return (<p>Hello toi</p>)
-        }
+        } else if (questionToBeDisplayed.answer.type === "text") {
+            return (
+                <div>
+                    <TextQuestion objectQuestion={questionToBeDisplayed}></TextQuestion>
+                </div>
+            )
+        } /*else if (questionToBeDisplayed.answer.type === "toggle") {
+            return (
+                <div>
+                    <ToggleQuestion objectQuestion={questionToBeDisplayed}></ToggleQuestion>
+                </div>
+            )
+        }*/
     }
 
     /*

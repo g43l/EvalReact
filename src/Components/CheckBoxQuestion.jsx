@@ -16,10 +16,8 @@ function CheckBoxQuestion({objectQuestion}){
             <div>
                 {objectQuestion.answer.options.map((option, index)=> (
                     <div key={index}>
-                        {/*<input type={objectQuestion.answer.type} id={objectQuestion.answer.options.value} name="q1" value={objectQuestion.answer.options.value}/>*/}
-                        <input type={objectQuestion.answer.type} id={objectQuestion.answer.options.name} name={objectQuestion.answer.name} value={objectQuestion.answer.options.name}/>
-                        {/*<label htmlFor={objectQuestion.answer.options.value}>{objectQuestion.answer.options.text}</label>*/}
-                        <label htmlFor={option.value}>{option.text}</label>
+                        <input type={objectQuestion.answer.type} id={option.name} name={objectQuestion.answer.name} value={option.name}/>
+                        <label htmlFor={option.name}>{option.text}</label>
                     </div>
                 ))}
             </div>
