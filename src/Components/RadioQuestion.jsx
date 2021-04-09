@@ -6,7 +6,7 @@ function RadioQuestion({objectQuestion}){
         console.log(option)
     ))
     return (
-        <div>
+        <div className="questionBlock">
             <h2>{objectQuestion.question}</h2>
             <div>
                 {objectQuestion.answer.options.map((option, index)=> ( //on boucle sur les options de réponses à la question

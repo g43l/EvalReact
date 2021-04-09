@@ -4,7 +4,7 @@ function TextQuestion({objectQuestion}){
     return (
         <div>
             <label>{objectQuestion.question}</label>
-            <input type={objectQuestion.answer.type} name={objectQuestion.answer.name}/>
+            <input type={objectQuestion.answer.type} className="textInput" name={objectQuestion.answer.name}/>
         </div>
     )
 

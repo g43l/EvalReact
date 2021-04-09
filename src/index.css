@@ -5,10 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: forestgreen;
 }
-
+form {
+  border: solid 2px lightgreen;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+.submit {
+  width: 120px;
+  height: 40px;
+  align-self: center;
+  margin-top: 40px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.questionBlock {
+  margin-bottom: 30px;
+}
+.textInput {
+  margin-left: 10px;
+}
